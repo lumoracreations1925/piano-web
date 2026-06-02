@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Geist", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-primary: #c3f5ff;
+  --color-primary-container: #00e5ff;
+  --color-on-primary: #00363d;
+  --color-on-primary-container: #00626e;
+  
+  --color-secondary: #dab9ff;
+  --color-secondary-container: #602b9d;
+  --color-on-secondary: #460283;
+  --color-on-secondary-container: #cfa7ff;
+  
+  --color-tertiary: #95ffef;
+  --color-tertiary-container: #30e8d4;
+  --color-tertiary-fixed: #4ffbe6;
+  
+  --color-surface-container-low: #1c1b1b;
+  --color-surface-container: #201f1f;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-highest: #353534;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-background-dim: #131313;
+  --color-outline-variant: #3b494c;
+  --color-outline-dim: rgba(59, 73, 76, 0.4);
+}
+
+@layer utilities {
+  .piano-lane {
+    background: linear-gradient(180deg, rgba(19, 19, 19, 0) 0%, rgba(30, 30, 30, 0.5) 100%);
+    border-right: 1px solid rgba(59, 73, 76, 0.3);
+  }
+  .tile-glow-primary {
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+  }
+  .tile-glow-secondary {
+    box-shadow: 0 0 15px rgba(218, 185, 255, 0.6);
+  }
+  .tile-glow-tertiary {
+    box-shadow: 0 0 15px rgba(149, 255, 239, 0.6);
+  }
+  .hit-zone-active {
+    box-shadow: 0 -4px 20px rgba(0, 229, 255, 0.4);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b494c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #849396;
+}

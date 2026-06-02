@@ -1,0 +1,6 @@
+{
+  "name": "RhythmEngine",
+  "description": "High-performance MIDI sequence visualizer and playback automation dashboard with real-time audio playback, interactive note mapping, song library, and timing analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
